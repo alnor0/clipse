@@ -1,0 +1,59 @@
+# Every test with the stand-in Resolve (tests/test_*.py) on Linux, Mac and Windows - Python only, nothing built or
+# published. Started by hand (Actions > Tests > Run workflow) or by a pull request into main. A Mac minute counts as
+# ten of the free plan's: a run is a few minutes. The speed test is shown, never failed on: GitHub's machines are slower
+# than a real one, and their speed comes and goes.
+name: Tests
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, macos-14, windows-2022]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: utf-8
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Qt's libraries and LuaJIT (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libegl1 libgl1 libxkbcommon0 libfontconfig1 libdbus-1-3 luajit
+      - name: LuaJIT (Mac)
+        if: runner.os == 'macOS'
+        run: brew install luajit
+      - run: pip install -e ".[preview]"
+      # (each runs even when one before it failed: every failure shows in one run)
+      - name: Commands, actions, search
+        run: python tests/test_commands.py
+      - name: Insert as
+        if: ${{ !cancelled() }}
+        run: python tests/test_insert_as.py
+      - name: The preview
+        if: ${{ !cancelled() }}
+        run: python tests/test_preview.py
+      - name: Where the files go
+        if: ${{ !cancelled() }}
+        run: python tests/test_paths.py
+      - name: Fusion's scripts (LuaJIT)
+        if: ${{ !cancelled() && runner.os != 'Windows' }}
+        run: python tests/test_fusion.py
+      - name: Speed (shown, not failed on)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: python tests/test_speed.py

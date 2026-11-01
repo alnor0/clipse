@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipse"
+version = "1.1.0"
+license = "GPL-3.0-only"
+description = "Fast fuzzy clip picker for inserting DaVinci Resolve Media Pool clips into the timeline"
+requires-python = ">=3.9"
+dependencies = [
+    "PySide6-Essentials>=6.6",
+]
+
+# Previewing (listening to sounds, watching clips) is optional. The
+# installers add these separately, from ready-made builds only, so a
+# computer without builds for them still gets everything else.
+[project.optional-dependencies]
+macos = ["pyobjc-framework-Cocoa"]
+preview = ["miniaudio>=1.59", "av>=12", "numpy>=1.22"]
+
+[project.scripts]
+clipse-daemon = "clipse.daemon:main"
+clipse = "clipse.client:main"
+
+[tool.setuptools.packages.find]
+include = ["clipse*"]
+
+[tool.setuptools.package-data]
+clipse = ["fonts/*", "data/*"]

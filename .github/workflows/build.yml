@@ -1,0 +1,64 @@
+# Builds Clipse for Linux, Mac and Windows on GitHub's machines (Nuitka builds only for the system it runs on):
+# tools/build_compiled.sh on each, the downloads kept as the run's artifacts for 14 days.
+# Started by hand (Actions > Build > Run workflow, or `gh workflow run build.yml -f systems=Linux`) or by a
+# version tag (v1.0.0).
+# Not on every push: a Mac minute counts as ten of the free plan's 2,000 a month - a run is about 160 (2026-10-23).
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      systems:   # (one or a few: a Mac minute counts as ten - Linux, Mac, Windows, comma between)
+        description: "Which to build: all, or e.g. Linux or Mac,Windows"
+        default: all
+  push:
+    tags: ["v*"]
+
+jobs:
+  plan:   # which systems this run builds
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.pick.outputs.matrix }}
+    steps:
+      - id: pick
+        env:
+          SYSTEMS: ${{ inputs.systems || 'all' }}
+        run: |
+          all='[{"os":"ubuntu-24.04","file":"build/clipse-linux.AppImage","name":"Linux"},
+                {"os":"macos-14","file":"build/clipse-mac.dmg","name":"Mac"},
+                {"os":"windows-2022","file":"build/clipse-windows.exe","name":"Windows"}]'
+          # (Linux in the manylinux container: glibc 2.34, every system Resolve runs on; Macs with Apple silicon only -
+          #  Intel Macs were dropped, 2026-10-23: a few % of users for nearly half the build's minutes)
+          if [ "$SYSTEMS" = all ]; then pick="$all"
+          else pick=$(echo "$all" | jq -c --arg s ",$SYSTEMS," '[.[] | select(.name as $n | $s | ascii_downcase | contains("," + ($n | ascii_downcase) + ","))]'); fi
+          echo "matrix=$(echo "$pick" | jq -c '{include: .}')" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: plan
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        if: runner.os != 'Linux'
+      - name: Inno Setup (the Windows installer)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          if (-not (Test-Path "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe")) { choco install innosetup -y --no-progress }
+      - name: Build
+        run: bash tools/build_compiled.sh
+      - uses: actions/upload-artifact@v4   # (with what it was built as, beside it - tools/publish_release.py checks it)
+        with:
+          name: ${{ matrix.name }}
+          path: |
+            ${{ matrix.file }}
+            ${{ matrix.file }}.info.json
+          retention-days: 14
+          if-no-files-found: error
