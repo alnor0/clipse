@@ -14,7 +14,7 @@
 - Type `:` to pick what to search, like Videos or Scripts.
 - <kbd>Ctrl</kbd>+<kbd>I</kbd> opens Insert as: back to back, at every marker or cut, with gaps, and where pictures sit in the frame.
 - <kbd>Ctrl</kbd>+<kbd>Enter</kbd> puts clips one after another, <kbd>Alt</kbd>+<kbd>M</kbd> one on every marker.
-- <kbd>Ctrl</kbd>+<kbd>K</kbd> opens the Actions. <kbd>Ctrl</kbd>+<kbd>H</kbd> opens History, to insert the same thing again.
+- <kbd>Ctrl</kbd>+<kbd>K</kbd> opens the Actions: all 23 of the scripts that come with Clipse, and more. <kbd>Ctrl</kbd>+<kbd>H</kbd> opens History, to insert the same thing again.
 
 ## Preview
 
@@ -36,6 +36,9 @@ Settings (<kbd>Ctrl</kbd>+<kbd>,</kbd>) has the themes, the font size and every 
 On a Mac, <kbd>Ctrl</kbd> is <kbd>Cmd</kbd>.
 
 ## Questions
+
+**Is it really free?**
+Yes. No trial, no key, no account. The code is here, under the GPL-3.0 license.
 
 **Does it work with the free version of DaVinci Resolve?**
 No, you need DaVinci Resolve Studio. The free version doesn't let other apps talk to it.
