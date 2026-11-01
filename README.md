@@ -26,61 +26,89 @@ It's made and tested on Linux. [Mac and Windows builds](https://github.com/alnor
 
 ## What it does
 
-### Find anything fast
+<details>
+<summary><b>Find anything fast.</b> Search everything, or start with a prefix for only scripts, markers or sounds.</summary>
+<br>
 
-Start with a prefix to search only scripts, markers or sounds. <kbd>Tab</kbd> picks a few at once, and <kbd>Ctrl</kbd>+<kbd>Tab</kbd> picks the same one twice.
+<kbd>Tab</kbd> picks a few at once, and <kbd>Ctrl</kbd>+<kbd>Tab</kbd> picks the same one twice.
 
 <img src="docs/media/search.webp" alt="Searching for clips, sounds and scripts">
 
-### See and hear it first
+</details>
 
-Every clip plays right next to the list, with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>. With <kbd>Ctrl</kbd>+<kbd>P</kbd> every sound you move to plays by itself. Scrub through it, loop it, and mark in and out before it goes anywhere.
+<details>
+<summary><b>See and hear it first.</b> Every clip plays right next to the list.</summary>
+<br>
+
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> opens the preview, and with <kbd>Ctrl</kbd>+<kbd>P</kbd> every sound you move to plays by itself. Scrub, loop, and mark in and out before it goes anywhere.
 
 <img src="docs/media/preview.webp" alt="Previewing a video and sounds">
 
-### Every useful tool in one place
+</details>
 
-Adjustment clips, markers, grabbing a frame, swapping a clip. What you'd normally dig through menus for, you find by typing its name. <kbd>Ctrl</kbd>+<kbd>K</kbd> shows them all, and every script can have its own key in Resolve.
+<details>
+<summary><b>Every useful tool in one place.</b> Find what you'd dig through menus for by typing its name.</summary>
+<br>
+
+<kbd>Ctrl</kbd>+<kbd>K</kbd> shows them all, and every script can have its own key in Resolve.
 
 <img src="docs/media/actions.webp" alt="The Actions panel">
 
-### Choose how clips are inserted
+</details>
 
-At the playhead, one after another, spaced out or on every marker. <kbd>Ctrl</kbd>+<kbd>I</kbd> sets lengths and where pictures sit in the frame, and shows it on a drawing of your timeline first.
+<details>
+<summary><b>Choose how clips are inserted.</b> One after another, spaced out or on every marker.</summary>
+<br>
+
+<kbd>Ctrl</kbd>+<kbd>I</kbd> sets lengths and where pictures sit in the frame, and shows it on a drawing of your timeline first.
 
 <img src="docs/media/insert_as.webp" alt="Insert as, with a drawing of the timeline">
 
-### Fusion expressions
+</details>
 
-Ready-made expressions and a cheat sheet, right next to your node.
+<details>
+<summary><b>Fusion expressions.</b> Ready-made expressions and a cheat sheet, right next to your node.</summary>
+<br>
 
 <img src="docs/media/fusion.webp" alt="Fusion expressions">
 
-### Swap a clip
+</details>
 
-Click a clip in Resolve and pick the new one. Same spot, same length.
+<details>
+<summary><b>Swap a clip.</b> Click a clip in Resolve and pick the new one. Same spot, same length.</summary>
+<br>
 
 <img src="docs/media/swap.webp" alt="Swapping a clip on the timeline">
 
-### Sounds like this
+</details>
 
-Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound like it.
+<details>
+<summary><b>Sounds like this.</b> Found a sound you like? Get the ones that sound like it.</summary>
+<br>
+
+<kbd>Ctrl</kbd>+<kbd>L</kbd> finds them.
 
 <img src="docs/media/sounds_like_this.webp" alt="Finding sounds that sound alike">
 
-### History
+</details>
 
-Every insert is kept. Pick an old one and its clips come back, set up the same way.
+<details>
+<summary><b>History.</b> Every insert is kept, and an old one comes back set up the same way.</summary>
+<br>
 
 <img src="docs/media/history.webp" alt="History of inserts">
 
-### Make it yours
+</details>
 
-Pick a theme and drag the edges to any size. Every option shows you what it does.
+<details>
+<summary><b>Make it yours.</b> Pick a theme, drag it to any size, and see what every option does.</summary>
+<br>
 
 <img src="docs/media/themes.webp" alt="Changing themes">
 
 <img src="docs/media/settings.webp" alt="Settings">
+
+</details>
 
 ## Why I made it
 
