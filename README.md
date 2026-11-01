@@ -7,7 +7,7 @@
     <a href="docs/guide.md">Guide</a> &nbsp;·&nbsp;
     <a href="https://github.com/alnor0/clipse/releases">Releases</a>
   </p>
-  <img src="docs/media/overview.webp" alt="Clipse open over DaVinci Resolve">
+  <img src="https://alnor.store/api/clipse-demo" alt="Clipse open over DaVinci Resolve">
 </div>
 
 <br>
