@@ -25,7 +25,7 @@ jobs:
           SYSTEMS: ${{ inputs.systems || 'all' }}
         run: |
           all='[{"os":"ubuntu-24.04","file":"build/clipse-linux.AppImage","name":"Linux"},
-                {"os":"macos-14","file":"build/clipse-mac.dmg","name":"Mac"},
+                {"os":"macos-15","file":"build/clipse-mac.dmg","name":"Mac"},
                 {"os":"windows-2022","file":"build/clipse-windows.exe","name":"Windows"}]'
           # (Linux in the manylinux container: glibc 2.34, every system Resolve runs on; Macs with Apple silicon only -
           #  Intel Macs were dropped, 2026-10-23: a few % of users for nearly half the build's minutes)
