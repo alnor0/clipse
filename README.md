@@ -7,8 +7,9 @@
     <a href="docs/guide.md">Guide</a> &nbsp;·&nbsp;
     <a href="https://github.com/alnor0/clipse/releases">Releases</a>
   </p>
-  <img src="https://alnor.store/api/clipse-demo" alt="Clipse open over DaVinci Resolve">
 </div>
+
+https://github.com/user-attachments/assets/56d18be8-4de2-49c8-903a-92f61c9561b4
 
 <br>
 
@@ -36,11 +37,11 @@ Type a few letters, press <kbd>Enter</kbd> and it's on your timeline. Start with
 
 **Edit page**
 
-<img src="docs/media/search.webp" alt="Searching on the Edit page">
+https://github.com/user-attachments/assets/945a2c2b-0486-4f40-82d9-14d9b8367030
 
 **Fusion page**
 
-<img src="docs/media/search_fusion.webp" alt="Searching on the Fusion page">
+https://github.com/user-attachments/assets/464f7dce-a579-486b-89e7-10ca209ee0eb
 
 </details>
 
@@ -50,7 +51,7 @@ Type a few letters, press <kbd>Enter</kbd> and it's on your timeline. Start with
 
 Every clip plays right next to the list, sound and all, with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>. With <kbd>Ctrl</kbd>+<kbd>P</kbd> every sound you move to plays by itself. Scrub through it, loop it, and mark in and out before it goes anywhere.
 
-<img src="docs/media/preview.webp" alt="Previewing a video and sounds">
+https://github.com/user-attachments/assets/6ac12cb8-9bc0-4740-8345-0f605c0bcb08
 
 </details>
 
@@ -64,11 +65,11 @@ Adjustment clips, markers, grabbing a frame, swapping a clip. All the things you
 
 **Edit page**
 
-<img src="docs/media/actions.webp" alt="The Actions panel on the Edit page">
+https://github.com/user-attachments/assets/ace84bb6-4324-4471-9756-358eff01b52e
 
 **Fusion page**
 
-<img src="docs/media/actions_fusion.webp" alt="The Actions panel on the Fusion page">
+https://github.com/user-attachments/assets/590fcf5d-0cc5-4d5b-bbf2-8406987554d0
 
 </details>
 
@@ -78,7 +79,7 @@ Adjustment clips, markers, grabbing a frame, swapping a clip. All the things you
 
 At the playhead, one after another, spaced out or on every marker. <kbd>Ctrl</kbd>+<kbd>I</kbd> sets lengths and where pictures sit in the frame, and shows it on a drawing of your timeline first. <kbd>Ctrl</kbd>+<kbd>Enter</kbd> puts clips one after another, <kbd>Alt</kbd>+<kbd>M</kbd> one on every marker.
 
-<img src="docs/media/insert_as.webp" alt="Insert as, with a drawing of the timeline">
+https://github.com/user-attachments/assets/e85d4c1a-a7e3-47a3-a571-1c6cec33f963
 
 </details>
 
@@ -88,7 +89,7 @@ At the playhead, one after another, spaced out or on every marker. <kbd>Ctrl</kb
 
 Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound like it.
 
-<img src="docs/media/sounds_like_this.webp" alt="Finding sounds that sound alike">
+https://github.com/user-attachments/assets/25714ec7-3ce5-4215-a91d-018fd87f0829
 
 </details>
 
@@ -96,7 +97,7 @@ Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound li
 <summary><b>Fusion expressions.</b> Ready-made expressions and a cheat sheet, right next to your node.</summary>
 <br>
 
-<img src="docs/media/fusion.webp" alt="Fusion expressions">
+https://github.com/user-attachments/assets/e12f5dfb-cb44-48b8-bac3-98c8fb44d8db
 
 </details>
 
@@ -104,7 +105,7 @@ Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound li
 <summary><b>Swap a clip.</b> Click a clip in Resolve, pick the new one. Same spot, same length.</summary>
 <br>
 
-<img src="docs/media/swap.webp" alt="Swapping a clip on the timeline">
+https://github.com/user-attachments/assets/76f2217f-76e9-4ae5-bf31-1d9b1538b2a4
 
 </details>
 
@@ -112,7 +113,7 @@ Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound li
 <summary><b>History.</b> Every insert is kept. Pick an old one and its clips come back, set up the same way.</summary>
 <br>
 
-<img src="docs/media/history.webp" alt="History of inserts">
+https://github.com/user-attachments/assets/42437d11-9e78-466d-9f98-b98a5e615d87
 
 </details>
 
@@ -120,7 +121,7 @@ Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound li
 <summary><b>Settings you can see.</b> Every option shows you what it does. No guessing.</summary>
 <br>
 
-<img src="docs/media/settings.webp" alt="Settings">
+https://github.com/user-attachments/assets/a6fab63b-04d3-4dfd-b1e7-17ba5b7c03ff
 
 </details>
 
@@ -130,7 +131,7 @@ Found a sound you like? <kbd>Ctrl</kbd>+<kbd>L</kbd> gets the ones that sound li
 
 Pick a theme. Drag the edges to make it bigger, and drag the line between the list and the preview to give either one more room. <kbd>Ctrl</kbd> with <kbd>+</kbd> or <kbd>-</kbd> makes everything in it larger or smaller.
 
-<img src="docs/media/themes.webp" alt="Changing themes">
+https://github.com/user-attachments/assets/14a27aed-6505-406a-a086-f20bd6a9fb5c
 
 </details>
 
