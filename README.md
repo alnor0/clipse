@@ -37,6 +37,8 @@ Most editors know the names of the sound effects, nodes and macros they use, me 
 
 With Clipse you type what you're after, from the Media Pool or anywhere else, and it's there. It's an add-on to Resolve, but it doesn't feel like one. It fits right in, it's responsive, and it's satisfying to use.
 
+I made Clipse with [Claude Code](https://claude.com/claude-code), and I haven't written any of the code myself. I just had the ideas, and knew what I needed.
+
 The source code is free, so you can do what you want with it. Use it, change it, build on it. And if you can see a way to make Clipse better, I'd love to hear it: [suggest an improvement](https://github.com/alnor0/clipse/issues/new) or send a pull request.
 
 ## More
