@@ -1039,7 +1039,7 @@ class SettingsDialog(QDialog):
             return b
         self.update_button = button("Update", "save", self._start_update)  # (only when one is out)
         self.update_button.hide()
-        button("Documentation", "book", lambda: QDesktopServices.openUrl(QUrl("https://alnor.store/docs.html")))
+        button("Documentation", "book", lambda: QDesktopServices.openUrl(QUrl("https://github.com/alnor0/clipse/blob/main/docs/guide.md")))
         button("Source code", "scripts", lambda: QDesktopServices.openUrl(QUrl("https://github.com/alnor0/clipse")),
                "Free under the GPL-3.0 license")
         button("Send feedback", "feedback", self._send_feedback, "A problem or an idea, with pictures if you like")

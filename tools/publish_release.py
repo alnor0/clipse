@@ -1,5 +1,5 @@
 """Puts a release on downloads.alnor.store (Cloudflare R2, bucket alnor-downloads): the downloads that are built
-(the names download.html links to), install.sh (Linux's terminal line) and clipse.json - the version the app's update check reads
+(the names the README and Releases use), install.sh (Linux's terminal line) and clipse.json - the version the app's update check reads
 (updater.LATEST_URL). The json goes last, so no app is told about a version before its download is there.
 
     python3 tools/publish_release.py            uploads what's in build/
@@ -24,7 +24,7 @@ BUILD = os.path.join(ROOT, "build")
 BUCKET = "alnor-downloads"
 WRANGLER = ["npx", "--yes", "wrangler@4.151.1"]
 DOWNLOADS = ("clipse-linux.AppImage", "clipse-mac.dmg", "clipse-windows.exe")
-PAGE = "https://alnor.store/download.html"
+PAGE = "https://github.com/alnor0/clipse/releases"
 UPDATES = {"linux": "clipse-linux.AppImage", "windows": "clipse-windows.exe", "mac": "clipse-mac.dmg"}  # (updater.DOWNLOAD_KINDS)
 
 

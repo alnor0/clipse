@@ -33,3 +33,5 @@ A key press has to stay within one frame (16 ms), which `test_speed.py` checks.
 - Clipse only talks to Resolve through its scripting API. No fake key presses or clicking its interface.
 - Before adding a setting, ask whether people would really disagree about it.
 - Wording stays short and plain, and doesn't explain what's already obvious.
+
+The code is under GPL-3.0. The pictures and videos in `docs/` only show how Clipse looks.
