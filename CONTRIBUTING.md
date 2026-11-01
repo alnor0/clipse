@@ -34,4 +34,4 @@ A key press has to stay within one frame (16 ms), which `test_speed.py` checks.
 - Before adding a setting, ask whether people would really disagree about it.
 - Wording stays short and plain, and doesn't explain what's already obvious.
 
-The code is under GPL-3.0. The pictures and videos in `docs/` only show how Clipse looks.
+The code is under GPL-3.0.
