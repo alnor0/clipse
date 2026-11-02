@@ -1,9 +1,9 @@
 #!/bin/sh
-# Clipse for Linux: curl -fsSL https://downloads.alnor.store/install.sh | sh
+# Clipse for Linux: curl -fsSL https://github.com/alnor0/clipse/releases/latest/download/install.sh | sh
 # Downloads the app and runs it with --install: it installs itself in ~/.local/share/clipse (no password)
 # and sets up Resolve's scripts - a tick for each. Updates and Uninstall are in the app (Settings).
 set -eu
-URL="__APPIMAGE_URL__"
+URL="https://github.com/alnor0/clipse/releases/latest/download/clipse-linux.AppImage"
 printf '\n  \033[1mClipse\033[0m\n\n'
 # An AppImage runs through FUSE - Resolve starts the installed one that way too, so it has to be there
 has_fuse() { [ -e /dev/fuse ] && { command -v fusermount3 || command -v fusermount; } >/dev/null 2>&1; }

@@ -88,7 +88,8 @@ def main():
     for name in found:
         put(name, os.path.join(BUILD, name), dry, folder=folder)
     with open(os.path.join(ROOT, "tools", "release", "install.sh"), encoding="utf-8") as f:  # (the terminal line)
-        script = f.read().replace("__APPIMAGE_URL__", f"https://downloads.alnor.store/{folder}clipse-linux.AppImage")
+        script = f.read().replace("https://github.com/alnor0/clipse/releases/latest/download/clipse-linux.AppImage",
+                                  f"https://downloads.alnor.store/{folder}clipse-linux.AppImage")
     with open(os.path.join(BUILD, "install.sh"), "w", encoding="utf-8") as f:
         f.write(script)
     put("install.sh", os.path.join(BUILD, "install.sh"), dry, folder=folder)

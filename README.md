@@ -22,7 +22,7 @@ Free, with no trial, no key and no account.
 ## Install
 
 ```sh
-curl -fsSL https://downloads.alnor.store/install.sh | sh
+curl -fsSL https://github.com/alnor0/clipse/releases/latest/download/install.sh | sh
 ```
 
 Clipse needs DaVinci Resolve Studio, with Preferences › System › General › External scripting using set to Local. Then open it from Workspace › Scripts › !Clipse › Clipse - Open, and give it a key in Resolve's Keyboard Customization.
