@@ -27,7 +27,7 @@ curl -fsSL https://downloads.alnor.store/install.sh | sh
 
 Clipse needs DaVinci Resolve Studio, with Preferences › System › General › External scripting using set to Local. Then open it from Workspace › Scripts › !Clipse › Clipse - Open, and give it a key in Resolve's Keyboard Customization.
 
-It's made and tested on Linux. [Mac and Windows builds](https://github.com/alnor0/clipse/releases) are made automatically and aren't tested, so they may not work.
+It's made and tested on Linux. [Mac and Windows builds](https://github.com/alnor0/clipse/releases) are made automatically and have had light to moderate testing, less than Linux.
 
 ## Why I made it
 

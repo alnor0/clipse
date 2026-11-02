@@ -44,7 +44,7 @@ Yes. No trial, no key, no account. The code is here, under the GPL-3.0 license.
 No, you need DaVinci Resolve Studio. The free version doesn't let other apps talk to it.
 
 **Which systems does it run on?**
-It's made and tested on Linux. There are Mac (Apple silicon) and Windows versions too, but they aren't tested and may not work.
+It's made and tested on Linux. There are Mac (Apple silicon) and Windows versions too, with light to moderate testing so far.
 
 **Does it need the internet?**
 No. It only uses it to check for updates and send crash logs, and you can turn both off in Settings › About.
